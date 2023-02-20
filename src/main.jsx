@@ -33,7 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         primaryColor: "primary",
       }}
     >
-      <App />
+      <App/>
     </MantineProvider>
   </React.StrictMode>
 );

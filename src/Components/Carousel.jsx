@@ -1,8 +1,10 @@
 import React from "react";
 import { Carousel } from "@mantine/carousel";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+import {BsArrowRight,BsArrowLeft} from 'react-icons/bs'
 import { Container, createStyles, Flex, Image, Text } from "@mantine/core";
 import exp from "../assets/weDo-1.jpg";
+import './testimonial.css'
 
 const useStyles = createStyles((theme) => ({
   imgDiv: {
@@ -13,12 +15,13 @@ const useStyles = createStyles((theme) => ({
     overflow: "hidden",
   },
   bgColor: {
-    backgroundColor: "whitesmoke",
+    backgroundColor:'white',
     border: `1px solid ${theme.colors.primary[6]}`,
   },
   slideContainer: {
     width: "100%",
-    padding: "50px",
+    padding: "50px 0",
+    backgroundColor:'whitesmoke'
   },
 }));
 const Testimonial = () => {
@@ -44,6 +47,8 @@ const Testimonial = () => {
           { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
         ]}
         align="center"
+        nextControlIcon={<BsArrowRight fontWeight='bolder'/>}
+        previousControlIcon={<BsArrowLeft/>}
       >
         <Carousel.Slide className={classes.bgColor} p={"lg"} mx={"lg"}>
           <Flex

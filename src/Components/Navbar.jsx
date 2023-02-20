@@ -4,7 +4,6 @@ import {
   createStyles,
   Flex,
   Image,
-  NavLink,
   Text,
 } from "@mantine/core";
 import React from "react";
