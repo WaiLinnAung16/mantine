@@ -27,7 +27,14 @@ const WhatDo = () => {
   const { classes } = useStyles();
   return (
     <div className={classes.container}>
-      <Text c={"primary"} fz={"3xl"} fw={"bolder"} ta={"center"} mb={50}>
+      <Text
+        c={"primary"}
+        fz={"3xl"}
+        fw={"bolder"}
+        ta={"center"}
+        mb={50}
+        tt="uppercase"
+      >
         What Do We Do
       </Text>
       <Container size={"xl"}>

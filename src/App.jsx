@@ -1,5 +1,5 @@
 import React from "react";
-
+import Testimonial from "./Components/Carousel";
 import Hero from "./Components/Hero";
 import MiniCard from "./Components/MiniCard";
 import Navbar from "./Components/Navbar";
@@ -12,6 +12,7 @@ const App = () => {
       <Hero />
       <MiniCard />
       <WhatDo />
+      <Testimonial />
     </div>
   );
 };
